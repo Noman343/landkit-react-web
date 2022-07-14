@@ -55,7 +55,7 @@ export default function NavbarComp() {
                 Contact
               </Nav.Link> */}
               <NavLink
-                to="/carousel"
+                to="/contact"
                 id="navlink"
                 className={({ isActive }) =>
                   isActive
