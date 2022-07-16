@@ -44,7 +44,7 @@ function FooterComp() {
 
           <div className="col-lg-2 col-md-4 col-sm-6 pt-2 pb-2">
             <h6 className="fw-bold text-uppercase">products</h6>
-            <ul className="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <ul className="list-unstyled mb-6 mb-md-8 mb-lg-0">
               <li className="mb-3">
                 <a href="#">Page Builder</a>
               </li>
@@ -64,7 +64,7 @@ function FooterComp() {
           </div>
           <div className="col-lg-2 col-md-4 col-sm-6 pt-2 pb-2">
             <h6 className="fw-bold text-uppercase">Services</h6>
-            <ul className="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <ul className="list-unstyled mb-6 mb-md-8 mb-lg-0">
               <li className="mb-3">
                 <a href="#">Page Builder</a>
               </li>
@@ -81,7 +81,7 @@ function FooterComp() {
           </div>
           <div className="col-lg-2 col-md-4 col-sm-6 offset-md-4 offset-lg-0 pt-2 pb-2">
             <h6 className="fw-bold text-uppercase">Connect</h6>
-            <ul className="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <ul className="list-unstyled mb-6 mb-md-8 mb-lg-0">
               <li className="mb-3">
                 <a href="#">Page Builder</a>
               </li>
@@ -108,7 +108,7 @@ function FooterComp() {
 
           <div className="col-lg-2 col-md-4 col-sm-6 pt-2 pb-2">
           <h6 className="fw-bold text-uppercase">Legal</h6>
-            <ul className="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <ul className="list-unstyled mb-6 mb-md-8 mb-lg-0">
               <li className="mb-3">
                 <a href="#">Page Builder</a>
               </li>

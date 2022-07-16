@@ -1,4 +1,4 @@
-a{
+a {
   text-decoration: none;
 }
 .dropdown-toggle::after {
@@ -94,7 +94,6 @@ a{
   transform: rotateY(-30deg) rotateX(15deg);
 }
 
-
-.list-inline-item{
+.list-inline-item {
   display: inline-block;
 }

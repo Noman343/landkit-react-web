@@ -9,7 +9,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />} >
+          <Route path="/" element={<Layout />}>
             <Route path="/carousel" element={<CarouselPage />} />
             <Route path="/about" element={<CarouselPage />} />
             <Route path="/contact" element={<Contact />} />

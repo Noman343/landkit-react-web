@@ -4,7 +4,7 @@ import img from "../assets/dashkit.jpg";
 
 function DashkitSection() {
   return (
-    <div className="container pt-5 pb-5" id="">
+    <div className="container pt-5 pb-5">
       <Row className="text-justify align-items-center justify-content-between">
         <div className="col-lg-6 col-md-6 col-sm-12">
           <div className="text-justify ">

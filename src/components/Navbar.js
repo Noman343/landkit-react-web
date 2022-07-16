@@ -17,7 +17,13 @@ export default function NavbarComp() {
   };
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="white" variant="light" className="mt-3">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        bg="white"
+        variant="light"
+        className="mt-3"
+      >
         <Container>
           <Navbar.Brand href="#">
             <img src={navImg} alt="nav logo" />
@@ -51,9 +57,6 @@ export default function NavbarComp() {
                 About
               </NavLink>
 
-              {/* <Nav.Link href="#pricing" id="navlink">
-                Contact
-              </Nav.Link> */}
               <NavLink
                 to="/contact"
                 id="navlink"
@@ -135,7 +138,7 @@ export default function NavbarComp() {
             </Nav>
             <Nav>
               <Button className="primary lift pt-2 pb-2 ps-3 pe-3 ">
-                  Buy Now
+                Buy Now
               </Button>
             </Nav>
           </Navbar.Collapse>
