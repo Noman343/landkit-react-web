@@ -25,7 +25,7 @@ export default function NavbarComp() {
         className="mt-3"
       >
         <Container>
-          <Navbar.Brand href="#">
+          <Navbar.Brand href="/">
             <img src={navImg} alt="nav logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -71,7 +71,7 @@ export default function NavbarComp() {
               </NavLink>
 
               <NavDropdown
-                title={<span id="navlink">Dropdown</span>}
+                title={<span id="navlink">Pages</span>}
                 id="collasible-nav-dropdown navlink"
                 show={show}
                 onMouseEnter={showDropdown}
@@ -79,7 +79,7 @@ export default function NavbarComp() {
               >
                 <NavDropdown.Item id="navlink">
                   <NavLink
-                    to="/nothing"
+                    to="/opening"
                     id="navlink"
                     className={({ isActive }) =>
                       isActive
@@ -88,7 +88,7 @@ export default function NavbarComp() {
                     }
                     activenlassname="is-active"
                   >
-                    Action
+                    Opening
                   </NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item id="navlink">
