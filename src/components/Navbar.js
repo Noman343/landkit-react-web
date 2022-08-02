@@ -93,7 +93,7 @@ export default function NavbarComp() {
                 </NavDropdown.Item>
                 <NavDropdown.Item id="navlink">
                   <NavLink
-                    to="/nothing"
+                    to="/signup"
                     id="navlink"
                     className={({ isActive }) =>
                       isActive
@@ -102,12 +102,12 @@ export default function NavbarComp() {
                     }
                     activenlassname="is-active"
                   >
-                    Another Action
+                    Sign Up
                   </NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item id="navlink">
                   <NavLink
-                    to="/nothing"
+                    to="/login"
                     id="navlink"
                     className={({ isActive }) =>
                       isActive
@@ -116,7 +116,7 @@ export default function NavbarComp() {
                     }
                     activenlassname="is-active"
                   >
-                    Pages
+                    Sign In
                   </NavLink>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />

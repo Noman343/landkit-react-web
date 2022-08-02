@@ -106,3 +106,7 @@ a {
     width: calc(100% + 50vw - 600px + 2.5rem);
   }
 }
+
+.signupImg {
+  transform: rotateY(-20deg) rotateX(10deg);
+}

@@ -6,6 +6,7 @@ import img2 from "../assets/photo-1.jpg";
 
 export default function App() {
   return (
+    <div className="bg-light">
     <div className="container pt-5 pb-5">
       <div className="row justify-content-center">
         <div className="col-lg-8 col-md-8 col-sm-12">
@@ -104,6 +105,7 @@ export default function App() {
           </div>
         </Carousel.Item>
       </Carousel>
+    </div>
     </div>
   );
 }

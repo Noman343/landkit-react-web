@@ -4,6 +4,7 @@ import img from "../assets/dashkit.jpg";
 
 function DashkitSection() {
   return (
+    <div className="bg-light">
     <div className="container pt-5 pb-5">
       <Row className="text-justify align-items-center justify-content-between">
         <div className="col-lg-6 col-md-6 col-sm-12">
@@ -74,6 +75,7 @@ function DashkitSection() {
           <img src={img} alt="img" className="img-fluid dashkitImg" />
         </div>
       </Row>
+    </div>
     </div>
   );
 }

@@ -5,7 +5,8 @@ import img from "../assets/download-card.jpg";
 
 function KitchenSinkExample() {
   return (
-    <div className="container pt-5 pb-5">
+    <div className="bg-light">
+    <div className="container pt-5 pb-5 bg-light">
       <Row className="align-items-center justify-content-between">
         <div className="col-lg-6 col-md-6 col-sm-12">
             <div className="w-100">
@@ -54,7 +55,7 @@ function KitchenSinkExample() {
                 <div className="mt-5">
                   <button
                     type="submit"
-                    className="btn btn-lg w-100 lift btn-success"
+                    className="btn btn-lg w-100 lift btn-primary"
                   >
                     Download
                   </button>
@@ -69,7 +70,7 @@ function KitchenSinkExample() {
         <div className="col-lg-6 col-md-6 col-sm-12  download-text-section">
           <div className="text-justify">
             <h2 className="h2">The most useful resource</h2>
-            <h2 className="text-success">ever created for developers.</h2>
+            <h2 className="text-primary">ever created for developers.</h2>
 
             <p className="light-text h5 pt-3 pb-4">
               Using Landkit to build your site means never worrying about
@@ -80,33 +81,33 @@ function KitchenSinkExample() {
             <Row className="justify-content-between">
             <div className="col-sm-12 col-md-6 col-lg-6">
               <div className="d-flex">
-                <div className="me-4 text-success">
+                <div className="me-4 text-primary">
                   <i className="bi bi-check-circle cards-p-text"></i>
                 </div>
-                <p className="text-success cards-p-text">Lifetime updates</p>
+                <p className="text-primary cards-p-text">Lifetime updates</p>
               </div>
 
               <div className="d-flex">
-                <div className="me-4 text-success">
+                <div className="me-4 text-primary">
                   <i className="bi bi-check-circle cards-p-text"></i>
                 </div>
-                <p className="text-success cards-p-text">Tons of assets</p>
+                <p className="text-primary cards-p-text">Tons of assets</p>
               </div>
             </div>
 
             <div className="col-sm-12 col-md-6 col-lg-6">
               <div className="d-flex">
-                <div className="me-4 text-success">
+                <div className="me-4 text-primary">
                   <i className="bi bi-check-circle cards-p-text"></i>
                 </div>
-                <p className="text-success cards-p-text">Lifetime updates</p>
+                <p className="text-primary cards-p-text">Lifetime updates</p>
               </div>
 
               <div className="d-flex">
-                <div className="me-4 text-success">
+                <div className="me-4 text-primary">
                   <i className="bi bi-check-circle cards-p-text"></i>
                 </div>
-                <p className="text-success cards-p-text">Tons of assets</p>
+                <p className="text-primary cards-p-text">Tons of assets</p>
               </div>
             </div>
             </Row>
@@ -114,6 +115,7 @@ function KitchenSinkExample() {
           </div>
         </div>
       </Row>
+    </div>
     </div>
   );
 }

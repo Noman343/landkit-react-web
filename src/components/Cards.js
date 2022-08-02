@@ -3,6 +3,7 @@ import airbnb from '../assets/airbnb.png';
 
 function Cards() {
   return (
+    <div className="bg-light">
     <div className="container" id="cards-section">
       <div className="row card-section-row">
         <div className="col-lg-4 col-md-4 col-sm-12  mt-2">
@@ -105,6 +106,7 @@ function Cards() {
          <img src={airbnb} alt="airbnb logo" className="img-fluid" />
         </div>
       </div>
+    </div>
     </div>
   );
 }

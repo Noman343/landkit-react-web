@@ -84,6 +84,7 @@ function Contact() {
   }
 
   return (
+    <div className="bg-light">
     <div className="container">
       <div className="row">
         <div className="col-lg-3 col-md-2 col-sm-1"></div>
@@ -226,7 +227,7 @@ function Contact() {
             <div className="mt-5">
               <button
                 type="submit"
-                className="btn btn-lg lift btn-success"
+                className="btn btn-lg lift btn-success mb-3"
                 onClick={formSubmit}
               >
                 Download
@@ -237,6 +238,7 @@ function Contact() {
 
         <div className="col-lg-3 col-md-2 col-sm-1"></div>
       </div>
+    </div>
     </div>
   );
 }

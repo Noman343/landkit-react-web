@@ -3,6 +3,7 @@ import heroImg from "../assets/hero.png";
 
 function HeroSection() {
   return (
+    <div className="bg-light">
       <div className="container" id="hero-section">
         <div className="row hero-section-row">
           <div className="col-lg-6 col-md-6 col-sm-12">
@@ -35,6 +36,7 @@ function HeroSection() {
             <img src={heroImg} alt="img" className="w-100" />
           </div>
         </div>
+      </div>
       </div>
   );
 }

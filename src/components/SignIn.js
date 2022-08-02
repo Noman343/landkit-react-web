@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import img from "../assets/cover-15.jpg";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { BouncingBalls } from "react-cssfx-loading";
+import img from "../assets/cover-14.jpg";
 
-function SignUp() {
-  const [username, setUsername] = useState("");
+function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loggedInState, setLoggedInState] = useState("");
@@ -17,33 +16,35 @@ function SignUp() {
       setMsg("");
       setStatus("");
     };
-  }, [username, email, password]);
+  }, [email, password]);
 
-  function signup(e) {
+  function signin(e) {
     e.preventDefault();
     setLoggedInState("logging in");
-    if (username === "" || email === "" || password === "") {
+    if (email === "" || password === "") {
       setMsg("Please complete the Fields");
       setStatus(400);
       setLoggedInState("");
     } else {
       axios
-        .post("https://cryptic-brushlands-00751.herokuapp.com/signup", {
-          name: username,
+        .post("https://cryptic-brushlands-00751.herokuapp.com/login", {
           email: email,
           password: password,
         })
         .then((res) => {
-          if (res.data.msg === "No matching documents") {
-            setMsg("Account Created Successfully now you can Log In.");
+          if (res.data.msg === "wrong password") {
+            setMsg("Incorrect Password");
+            setStatus(400);
+            setLoggedInState("");
+          } else if (res.data.msg === "Incorrect Email") {
+            setMsg("Incorrect Email");
+            setStatus(400);
+            setLoggedInState("");
+          } else if (res.status === 200) {
+            setMsg(res.data.msg);
             setStatus(200);
-            // setUsername("");
             // setEmail("");
             // setPassword("");
-            setLoggedInState("");
-          } else if (res.data.msg === "please login") {
-            setMsg("You are already Registered. Please Log In.");
-            setStatus(200);
             setLoggedInState("");
           } else {
             setMsg("Something went wrong");
@@ -59,19 +60,20 @@ function SignUp() {
         });
     }
   }
+
   return (
     <>
       <section>
         <div className="container d-flex flex-column">
           <div className="row align-items-center justify-content-center gx-0 min-vh-100">
             <div className="col-12 col-md-6 col-lg-4 py-8 py-md-11">
-              <h1 className="mb-1">Sign up</h1>
+              <h1 className="mb-1">Sign In</h1>
 
               <p className="mb-6 light-text">
                 Simplify your workflow in minutes.
               </p>
 
-              <form onSubmit={signup}>
+              <form onSubmit={signin}>
                 {status === 400 || status === 500 ? (
                   <div
                     className="alert alert-danger d-flex align-items-center"
@@ -89,20 +91,6 @@ function SignUp() {
                 ) : (
                   ""
                 )}
-                <div className="form-floating">
-                  <input
-                    type="text"
-                    className="form-control input-fields"
-                    id="card-name"
-                    aria-describedby="emailHelp"
-                    placeholder="Name"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                  />
-                  <label className="light-text" htmlFor="card-name">
-                    Name
-                  </label>
-                </div>
 
                 <div className="form-floating">
                   <input
@@ -141,14 +129,14 @@ function SignUp() {
                       type="submit"
                       className="btn btn-lg w-100 lift btn-primary"
                     >
-                      Sign Up
+                      Sign In
                     </button>
                   )}
                 </div>
               </form>
 
               <p className="mb-0 mt-3 fs-sm text-muted">
-                Already have an account? <Link to={"/login"}>Log in</Link>.
+                Don't have an account? <Link to={"/signup"}>Sign Up</Link>.
               </p>
             </div>
             <div className="col-lg-7 offset-lg-1 align-self-stretch d-none d-lg-block">
@@ -164,4 +152,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default SignIn;

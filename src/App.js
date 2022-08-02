@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Opening from "./components/Opening";
 import Home from "./components/Home";
 import SignUp from "./components/SignUp";
+import SignIn from "./components/SignIn";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             
            </Route>
            <Route path="/signup" element={<SignUp />} />
+           <Route path="/login" element={<SignIn />} />
         </Routes>
       </BrowserRouter>
     </>
