@@ -12,12 +12,12 @@ function SignUp() {
   const [status, setStatus] = useState(0);
   const [msg, setMsg] = useState("");
 
-  useEffect(() => {
-    return () => {
-      setMsg("");
-      setStatus("");
-    };
-  }, [username, email, password]);
+  // useEffect(() => {
+  //   return () => {
+  //     setMsg("");
+  //     setStatus("");
+  //   };
+  // }, [username, email, password]);
 
   function signup(e) {
     e.preventDefault();
@@ -37,14 +37,25 @@ function SignUp() {
           if (res.data.msg === "No matching documents") {
             setMsg("Account Created Successfully now you can Log In.");
             setStatus(200);
-            // setUsername("");
-            // setEmail("");
-            // setPassword("");
             setLoggedInState("");
+            setTimeout(() => {
+              setStatus(0);
+              setMsg("");
+              setEmail("");
+              setPassword("");
+              setUsername("");
+            }, 2000);
           } else if (res.data.msg === "please login") {
             setMsg("You are already Registered. Please Log In.");
             setStatus(200);
             setLoggedInState("");
+            setTimeout(() => {
+              setStatus(0);
+              setMsg("");
+              setEmail("");
+              setPassword("");
+              setUsername("");
+            }, 2000);
           } else {
             setMsg("Something went wrong");
             setStatus(500);

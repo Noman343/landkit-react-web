@@ -11,12 +11,12 @@ function SignIn() {
   const [status, setStatus] = useState(0);
   const [msg, setMsg] = useState("");
 
-  useEffect(() => {
-    return () => {
-      setMsg("");
-      setStatus("");
-    };
-  }, [email, password]);
+  // useEffect(() => {
+  //   return () => {
+  //     setMsg("");
+  //     setStatus("");
+  //   };
+  // }, [email, password]);
 
   function signin(e) {
     e.preventDefault();
@@ -32,8 +32,9 @@ function SignIn() {
           password: password,
         })
         .then((res) => {
-          if (res.data.msg === "wrong password") {
+          if (res.data.error === "wrong password") {
             setMsg("Incorrect Password");
+            console.log(res.data.error);
             setStatus(400);
             setLoggedInState("");
           } else if (res.data.msg === "Incorrect Email") {
@@ -41,11 +42,16 @@ function SignIn() {
             setStatus(400);
             setLoggedInState("");
           } else if (res.status === 200) {
+            console.log(res);
             setMsg(res.data.msg);
             setStatus(200);
-            // setEmail("");
-            // setPassword("");
             setLoggedInState("");
+            setTimeout(() => {
+              setStatus(0);
+              setMsg("");
+              setEmail("");
+              setPassword("");
+            }, 3000);
           } else {
             setMsg("Something went wrong");
             setStatus(500);
