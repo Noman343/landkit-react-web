@@ -110,3 +110,13 @@ a {
 .signupImg {
   transform: rotateY(-20deg) rotateX(10deg);
 }
+.btn-soft{
+  background-color: rgba(51,94,234,.1);
+    color: #335eea;
+    border-color: transparent!important;
+}
+.btn-soft:hover{
+  background-color: rgba(51,94,234,.2);
+    color: #335eea;
+    border-color: transparent!important;
+}

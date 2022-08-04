@@ -18,7 +18,7 @@ function Opening() {
               </p>
             </div>
             <div className="col-auto">
-              <a href="#!" className="btn btn-lg btn-outline-primary me-1">
+              <a href="#!" className="btn btn-lg me-2 btn-soft">
                 Refer a friend
               </a>
               <a href="#!" className="btn btn-lg btn-primary">
