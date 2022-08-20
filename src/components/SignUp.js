@@ -44,7 +44,7 @@ function SignUp() {
               setEmail("");
               setPassword("");
               setUsername("");
-            }, 2000);
+            }, 3000);
           } else if (res.data.msg === "please login") {
             setMsg("You are already Registered. Please Log In.");
             setStatus(200);
@@ -55,7 +55,7 @@ function SignUp() {
               setEmail("");
               setPassword("");
               setUsername("");
-            }, 2000);
+            }, 3000);
           } else {
             setMsg("Something went wrong");
             setStatus(500);
@@ -74,7 +74,7 @@ function SignUp() {
     <>
       <section>
         <div className="container d-flex flex-column">
-          <div className="row align-items-center justify-content-center gx-0 min-vh-100">
+          <div className="row align-items-center justify-content-center min-vh-100">
             <div className="col-12 col-md-6 col-lg-4 py-8 py-md-11">
               <h1 className="mb-1">Sign up</h1>
 
@@ -105,7 +105,6 @@ function SignUp() {
                     type="text"
                     className="form-control input-fields"
                     id="card-name"
-                    aria-describedby="emailHelp"
                     placeholder="Name"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
@@ -120,7 +119,6 @@ function SignUp() {
                     type="email"
                     className="form-control input-fields"
                     id="card-email"
-                    aria-describedby="emailHelp"
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -135,7 +133,6 @@ function SignUp() {
                     type="password"
                     className="form-control input-fields"
                     id="card-pwd"
-                    aria-describedby="emailHelp"
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}

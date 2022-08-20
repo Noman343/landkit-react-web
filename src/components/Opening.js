@@ -35,7 +35,7 @@ function Opening() {
             <div className="col-12 col-md-8">
               <h3 className="fw-normal">Who we are</h3>
 
-              <p className="text-gray-800 mb-6 mb-md-8">
+              <p className="text-gray-800 mb-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Pellentesque euismod, nisi eu consectetur egestas, nisl nisi
                 consectetur nisi, eu consectetur nisi nisi euismod nisi.
@@ -48,7 +48,7 @@ function Opening() {
 
               <h3 className="fw-normal">What we're looking for</h3>
 
-              <p className="text-gray-800 mb-5">
+              <p className="mb-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Pellentesque euismod, nisi eu consectetur egestas, nisl nisi
                 consectetur nisi, eu consectetur nisi nisi euismod nisi.
@@ -56,53 +56,53 @@ function Opening() {
               </p>
 
               <div className="d-flex">
-                <div className="badge-rounded-circle bg-success-soft mt-1 me-4">
+                <div className="mt-1 me-4">
                   <i className="bi bi-check-circle text-primary"></i>
                 </div>
 
-                <p className="text-gray-800">
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Pellentesque euismod, nisi eu consectetur egestas
                 </p>
               </div>
               <div className="d-flex">
-                <div className="badge-rounded-circle bg-success-soft mt-1 me-4">
+                <div className="mt-1 me-4">
                   <i className="bi bi-check-circle text-primary"></i>
                 </div>
 
-                <p className="text-gray-800">
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Pellentesque euismod, nisi eu consectetur egestas, nisl nisi
                   consectetur nisi
                 </p>
               </div>
               <div className="d-flex">
-                <div className="badge-rounded-circle bg-success-soft mt-1 me-4">
+                <div className="mt-1 me-4">
                   <i className="bi bi-check-circle text-primary"></i>
                 </div>
 
-                <p className="text-gray-800">
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Pellentesque euismod, nisi eu consectetu
                 </p>
               </div>
               <div className="d-flex">
-                <div className="badge-rounded-circle bg-success-soft mt-1 me-4">
+                <div className="mt-1 me-4">
                   <i className="bi bi-check-circle text-primary"></i>
                 </div>
 
-                <p className="text-gray-800">
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Pellentesque euismod, nisi eu consectetur egestas, nisl nisi
                   consectetur nisi
                 </p>
               </div>
               <div className="d-flex">
-                <div className="badge-rounded-circle bg-success-soft mt-1 me-4">
+                <div className="mt-1 me-4">
                   <i className="bi bi-check-circle text-primary"></i>
                 </div>
 
-                <p className="text-gray-800 mb-6 mb-md-8">
+                <p className=" mb-6 mb-md-8">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Pellentesque euismod, nisi eu consectetur egestas, nisl nisi
                   consectetur nisi
@@ -112,21 +112,21 @@ function Opening() {
               <h3 className="mb-5 fw-normal">Applicant requirements</h3>
 
               <div className="d-flex">
-                <div className="badge-rounded-circle bg-success-soft mt-1 me-4">
+                <div className="mt-1 me-4">
                   <i className="bi bi-check-circle text-primary"></i>
                 </div>
 
-                <p className="text-gray-800">
+                <p >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Pellentesque euismod, nisi eu consectetur
                 </p>
               </div>
               <div className="d-flex">
-                <div className="badge-rounded-circle bg-success-soft mt-1 me-4">
+                <div className="mt-1 me-4">
                   <i className="bi bi-check-circle text-primary"></i>
                 </div>
 
-                <p className="text-gray-800 mb-6 mb-md-0">
+                <p className=" mb-6 mb-md-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Pellentesque euismod, nisi eu consectetur egestas, nisl nisi
                   consectetur
@@ -138,7 +138,7 @@ function Opening() {
                 <div className="card-body">
                   <h4 className="fw-normal">Need help?</h4>
 
-                  <p className="fs-sm text-gray-800 mb-3">
+                  <p className="fs-sm  mb-3">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Pellentesque euismod, nisi eu consectetur egestas, nisl nisi
                     consectetur nisi
@@ -159,12 +159,7 @@ function Opening() {
                   </h6>
 
                   <p className="fs-sm mb-0">
-                    <a
-                      href="mailto:support@goodthemes.co"
-                      className="text-reset"
-                    >
-                      support@goodthemes.co
-                    </a>
+                      nomim2636@gmail.com
                   </p>
                 </div>
               </div>
@@ -173,7 +168,7 @@ function Opening() {
                 <div className="card-body">
                   <h4 className="fw-normal">Don't see a job for you?</h4>
 
-                  <p className="fs-sm text-gray-800">
+                  <p className="fs-sm ">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Pellentesque euismod, nisi eu consectetur egestas, nisl nisi
                   </p>

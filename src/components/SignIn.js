@@ -71,7 +71,7 @@ function SignIn() {
     <>
       <section>
         <div className="container d-flex flex-column">
-          <div className="row align-items-center justify-content-center gx-0 min-vh-100">
+          <div className="row align-items-center justify-content-center min-vh-100">
             <div className="col-12 col-md-6 col-lg-4 py-8 py-md-11">
               <h1 className="mb-1">Sign In</h1>
 
